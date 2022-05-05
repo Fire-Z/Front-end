@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单域-1</title>
+</head>
+<body>
+    <form action="demo.php" method="post" name="form1">
+        <label for="username">用户名：</label>
+        <input type="text" name="username" value="请输入用户名" maxlength="6" id="username"> <br>
+        <!-- 密码隐藏显示 -->
+        密码：  <input type="password" name="password" value="请输入密码">  <br>
+        <!-- name属性相同才能实现单选 -->
+        <!-- 单选按钮和复选框用checked属性设置默认选项 -->
+        性别： 
+        <!-- label表单用来绑定表单元素 -->
+        <label for="man">男</label>
+        <input type="radio" name="gender" value="男" checked="checked" id="man">
+        <label for="women">女</label>
+        <input type="radio" name="gender" value="女" id="women"> <br>
+        <!-- 多选, name属性必须相同 -->
+        爱好：篮球<input type="checkbox" name="hobby">  足球 <input type="checkbox" name="hobby"> 乒乓球 <input type="checkbox" name="hobby" checked="checked"> <br>
+        <input type="submit" value="免费注册"> <input type="reset" value="重新填写"> <br>
+        <!-- 结合JS一起使用 -->
+        <input type="button" value="获取短信验证码"> <br>
+        上传头像<input type="file"> <br>
+    </form>
+</body>
+</html>
